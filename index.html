@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Author - Simple Page</title>
+  <style>
+    :root { --bg:#f7f8fb; --accent:#2b7cff; --text:#222; --muted:#555; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:var(--text); }
+    header { background:#fff; border-bottom:1px solid #e6e9ee; }
+    .container { max-width:900px; margin:0 auto; padding:1rem; }
+    nav ul { list-style:none; margin:0; padding:0; display:flex; gap:0.75rem; }
+    nav a { display:inline-block; padding:0.5rem 0.75rem; color:var(--muted); text-decoration:none; border-radius:6px; }
+    nav a:hover, nav a:focus { background:rgba(43,124,255,0.08); color:var(--accent); }
+    .hero { display:flex; gap:1rem; align-items:center; padding:1rem 0; }
+    .avatar { width:84px; height:84px; border-radius:10px; background:linear-gradient(135deg,#dfe9ff,#ffffff); display:flex; align-items:center; justify-content:center; font-weight:600; color:var(--accent); }
+    h1 { margin:0 0 0.25rem 0; font-size:1.25rem; }
+    p.lead { margin:0; color:var(--muted); }
+    section { background:#fff; border-radius:8px; padding:1rem; margin-top:1rem; box-shadow: 0 1px 2px rgba(16,24,40,0.03); }
+    ul.simple { margin:0.5rem 0 0 1rem; color:var(--muted); }
+    footer { text-align:center; color:var(--muted); font-size:0.9rem; margin:1.5rem 0; }
+    a.button { background:var(--accent); color:#fff; padding:0.45rem 0.7rem; border-radius:6px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" role="banner">
+      <nav aria-label="Main menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <div class="hero" role="region" aria-labelledby="author-name">
+      <div class="avatar" aria-hidden="true">OM</div>
+      <div>
+        <h1 id="author-name">Omar Maharramli</h1>
+        <p class="lead">Frontend developer and designer focused on simple, accessible interfaces.</p>
+      </div>
+    </div>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>Brief info: Omar builds clean web experiences, enjoys writing maintainable code and learning new tools.</p>
+      <ul class="simple">
+        <li>Location: Remote</li>
+        <li>Experience: HTML, CSS, JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected Projects</h2>
+      <ul class="simple">
+        <li>Portfolio site — a minimal responsive website.</li>
+        <li>UI component library — reusable, accessible components.</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p class="lead">Email: <a href="mailto:omar.maharramli27@gmail.com">omar.maharramli27@gmail.com</a></p>
+      <p><a class="button" href="#projects">View Projects</a></p>
+    </section>
+
+    <footer>
+      <small>&copy; 2025 Omar Maharramli — Simple profile page</small>
+    </footer>
+  </main>
+</body>
+</html>
